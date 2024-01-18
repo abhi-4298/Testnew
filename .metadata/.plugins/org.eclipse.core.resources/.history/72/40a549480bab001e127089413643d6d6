@@ -1,0 +1,24 @@
+
+public class LearningJavaClass {
+	
+	public static void main(String args[]) {
+		System.out.println("Testing value");
+		stringReverseMethod("Testing Value");
+	}
+	
+	
+	
+	/*
+	 * Reversing the String value
+	 */
+	public static void stringReverseMethod(String value) {
+		StringBuilder reverseString= new StringBuilder();
+		reverseString.append(value);
+		String reversedAndUpperCase = reverseString.reverse().toString().toUpperCase();
+        System.out.println(reversedAndUpperCase);
+	
+	}
+		
+	}
+
+

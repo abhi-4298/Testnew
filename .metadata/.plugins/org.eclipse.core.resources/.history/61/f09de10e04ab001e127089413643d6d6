@@ -1,0 +1,25 @@
+
+public class LearningJavaClass {
+	
+	public static void main(String args[]) {
+		System.out.println("Testing value");
+		stringReverseMethod("TestingValue");
+	}
+	
+	
+	
+	/*
+	 * Reversing the String value
+	 */
+	public static void stringReverseMethod(String value) {
+		char[] valueChars= value.toCharArray();
+		String reverseString=new String();
+		for(int i=valueChars.length-1;i>0;i--) {
+			System.out.println(valueChars[i]);
+			reverseString.concat(String.valueOf(valueChars[i]));
+		}
+		System.out.println(reverseString);
+		
+	}
+
+}
